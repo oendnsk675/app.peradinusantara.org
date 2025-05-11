@@ -1,0 +1,25 @@
+services:
+  app:
+    build:
+      context: .
+    volumes:
+      - .:/var/www/html
+    ports:
+      - "8080:80"
+    depends_on:
+      - db
+
+  db:
+    image: mariadb:10.6.21
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: peradi
+      MYSQL_USER: peradi1209
+      MYSQL_PASSWORD: peradi1209
+    volumes:
+      - dbdata:/var/lib/mysql
+    ports:
+      - "3306:3306"
+
+volumes:
+  dbdata:
