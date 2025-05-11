@@ -16,8 +16,8 @@ Aplikasi web berbasis PHP dengan database MariaDB, dikemas menggunakan Docker Co
 ### 1. Clone repository
 
 ```bash
-git clone https://github.com/username/repo-peradi.git
-cd repo-peradi
+git clone https://github.com/oendnsk675/app.peradinusantara.org.git
+cd app.peradinusantara.org
 ```
 
 ### 2. Build Image
