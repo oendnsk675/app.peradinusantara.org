@@ -1,0 +1,37 @@
+# Ignore system files
+# Ignore user uploads
+/application/uploads/
+# Ignore environment configuration files
+/.env
+/.env.*
+# Ignore log files
+/application/logs/
+/logs/
+# Ignore cache
+/application/cache/
+/cache/
+/tmp/
+/public/assets/cache/
+/public/assets/compressed/
+# Ignore environment-specific configurations
+/application/config/*
+!application/config/database.php
+!application/config/config.php
+# Ignore composer files (if using composer)
+composer.lock
+/vendor/
+# Ignore Node.js dependencies (if using Node.js for frontend)
+node_modules/
+# Ignore IDE and OS-specific files
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+backups
+*.jpg
+*.jpeg
+*.png
+*.pdf
+*.docx
+*.xlsx
